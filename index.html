@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AURA Interior Design Studio — spaces with soul and purpose.">
+  <title>AURA | Interior Design Studio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            aura: {
+              blue: "#66745B",
+              purple: "#B8795B",
+              ink: "#263126",
+              muted: "#77796F",
+              dark: "#202820"
+            }
+          },
+          fontFamily: {
+            sans: ["Poppins", "Arial", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;120;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-[#F8F7F2] font-sans text-[#30372F] antialiased">
+
+  <!-- Header Section -->
+  <header id="header" class="fixed inset-x-0 top-0 z-40 bg-white/95 transition-all duration-300">
+    <nav class="relative mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
+      <a href="#home" class="brand flex items-center gap-2 text-xl font-extrabold tracking-tight text-aura-blue">
+        <span class="brand-mark">A</span><span>AURA<span class="text-stone-600">
+      </a>
+      <div id="navLinks"
+        class="nav-links absolute left-0 right-0 top-full hidden flex-col gap-5 border-t border-stone-200 bg-white px-6 py-5 text-sm font-medium shadow-lg md:left-1/2 md:right-auto md:top-1/2 md:flex md:w-max md:-translate-x-1/2 md:-translate-y-1/2 md:flex-row md:items-center md:gap-8 md:border-0 md:bg-transparent md:p-0 md:shadow-none">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#team">Our Team</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+      <a href="#contact"
+        class="hidden rounded-md bg-aura-blue px-5 py-2.5 text-sm font-semibold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-[#526047] hover:shadow-lg md:inline-flex">Get
+        In Touch</a>
+      <button id="menuToggle" class="menu-toggle rounded-lg border border-stone-200 p-2 text-stone-700 md:hidden"
+        aria-label="Toggle navigation" aria-expanded="false">
+        <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 7h16M4 12h16M4 17h16" />
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section id="home"
+      class="hero-section relative flex min-h-screen items-center overflow-hidden px-5 pb-16 pt-28 lg:px-8">
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+      <div class="mx-auto grid w-full max-w-7xl items-center gap-12 lg:grid-cols-2 lg:gap-16">
+        <div class="hero-copy reveal">
+          <p class="mb-4 flex items-center gap-2 text-sm font-semibold tracking-wide text-aura-blue"><span
+              class="h-2 w-2 rounded-full bg-emerald-500"></span> INTERIOR DESIGN STUDIO</p>
+          <h1
+            class="max-w-xl text-4xl font-extrabold leading-tight tracking-tight text-stone-900 sm:text-5xl lg:text-[3.45rem]">
+            We Create <span class="text-aura-blue">Beautiful Spaces</span> for Your Life</h1>
+          <p class="mt-5 max-w-lg text-sm leading-7 text-stone-600 sm:text-base">We transform everyday spaces into
+            thoughtful interiors. Discover a perfect balance of comfort, elegance, and details designed around you.</p>
+          <div class="mt-6 flex flex-wrap gap-4 text-xs font-medium text-stone-600">
+            <span class="flex items-center gap-2"><span class="check-dot">✓</span> Personalized Design</span>
+            <span class="flex items-center gap-2"><span class="check-dot">✓</span> Creative Solutions</span>
+            <span class="flex items-center gap-2"><span class="check-dot">✓</span> Timeless Style</span>
+          </div>
+          <div class="mt-8 flex flex-wrap items-center gap-3">
+            <a href="#contact"
+              class="primary-btn rounded-md bg-aura-blue px-6 py-3 text-sm font-semibold text-white shadow-lg transition hover:-translate-y-1 hover:bg-[#526047]">Start
+              Your Project <span class="ml-2">→</span></a>
+            <a href="#services"
+              class="secondary-btn rounded-md border border-stone-200 bg-white px-6 py-3 text-sm font-semibold text-stone-700 transition hover:-translate-y-1 hover:border-aura-blue hover:text-aura-blue">Explore
+              More</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal reveal-delay relative mx-auto w-full max-w-xl">
+          <div
+            class="visual-card relative flex aspect-[1.52/1] items-center justify-center overflow-hidden rounded-2xl">
+            <div class="hero-photo-overlay"></div>
+            <div class="visual-center">
+              <span class="hero-photo-label">A HOME THAT FEELS LIKE YOU</span>
+              <strong class="hero-photo-title">Thoughtful living.</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section px-5 py-24 lg:px-8">
+      <div class="mx-auto max-w-7xl">
+        <div class="section-heading reveal mx-auto mb-12 max-w-2xl text-center">
+          <span class="eyebrow">WHAT WE DO</span>
+          <h2 class="mt-3 text-3xl font-bold tracking-tight text-stone-900 sm:text-4xl">Our <span
+              class="text-aura-blue">Services</span></h2>
+          <p class="mt-4 text-sm leading-7 text-stone-600">From the first sketch to the final detail, we bring your
+            vision to life with a complete design experience.</p>
+        </div>
+        <div class="grid gap-6 md:grid-cols-3">
+          <article
+            class="service-card reveal rounded-xl border border-stone-200 bg-white p-7 shadow-sm transition duration-300">
+            <div class="service-photo"><img
+                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85"
+                alt="Elegant residential interior" loading="lazy"></div>
+            <div class="service-top flex items-center justify-between">
+              <div class="service-icon icon-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="1.8">
+                  <path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6M8 9h.01M16 9h.01" />
+                </svg></div><span class="service-arrow">↗</span>
+            </div>
+            <h3 class="mt-6 text-lg font-bold text-stone-900">Interior Design</h3>
+            <p class="mt-3 text-sm leading-6 text-stone-600">Beautiful, functional interiors shaped around your
+              lifestyle, taste, and personality.</p>
+            <ul class="mt-5 space-y-3 text-xs text-stone-600">
+              <li>✓ Residential Interiors</li>
+              <li>✓ Commercial Spaces</li>
+              <li>✓ Color & Material Selection</li>
+            </ul>
+          </article>
+          <article
+            class="service-card reveal reveal-delay rounded-xl border border-stone-200 bg-white p-7 shadow-sm transition duration-300">
+            <div class="service-photo"><img
+                src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85"
+                alt="Thoughtful living room layout" loading="lazy"></div>
+            <div class="service-top flex items-center justify-between">
+              <div class="service-icon icon-purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="1.8">
+                  <path d="M4 4h16v16H4zM4 8h16M8 4v16M14 14h6M14 17h6" />
+                </svg></div><span class="service-arrow">↗</span>
+            </div>
+            <h3 class="mt-6 text-lg font-bold text-stone-900">Space Planning</h3>
+            <p class="mt-3 text-sm leading-6 text-stone-600">Smart layouts that make every corner feel balanced,
+              comfortable, and purposeful.</p>
+            <ul class="mt-5 space-y-3 text-xs text-stone-600">
+              <li>✓ Furniture Layout</li>
+              <li>✓ Space Optimization</li>
+              <li>✓ Lighting Plans</li>
+            </ul>
+          </article>
+          <article
+            class="service-card reveal reveal-delay-2 rounded-xl border border-stone-200 bg-white p-7 shadow-sm transition duration-300">
+            <div class="service-photo"><img
+                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85"
+                alt="Interior 3D visualization" loading="lazy"></div>
+            <div class="service-top flex items-center justify-between">
+              <div class="service-icon icon-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="1.8">
+                  <path d="m3 8 9-5 9 5-9 5-9-5Z" />
+                  <path d="M3 8v9l9 5 9-5V8M12 13v9" />
+                </svg></div><span class="service-arrow">↗</span>
+            </div>
+            <h3 class="mt-6 text-lg font-bold text-stone-900">3D Visualization</h3>
+            <p class="mt-3 text-sm leading-6 text-stone-600">See your future space before it becomes real through
+              detailed visual concepts.</p>
+            <ul class="mt-5 space-y-3 text-xs text-stone-600">
+              <li>✓ 3D Interior Renders</li>
+              <li>✓ Concept Development</li>
+              <li>✓ Design Presentation</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section relative overflow-hidden px-5 py-12 text-white lg:px-8">
+      <div class="stats-shape stats-shape-left"></div>
+      <div class="stats-shape stats-shape-right"></div>
+      <div class="relative mx-auto grid max-w-7xl grid-cols-2 gap-8 text-center md:grid-cols-4 md:gap-4">
+        <div class="stat-item reveal"><strong class="counter" data-target="120">0</strong><span>Design Concepts</span>
+        </div>
+        <div class="stat-item reveal reveal-delay"><strong class="counter" data-target="85">0</strong><span>Client
+            Projects</span></div>
+        <div class="stat-item reveal reveal-delay-2"><strong class="counter" data-target="40">0</strong><span>Spaces
+            Designed</span></div>
+        <div class="stat-item reveal reveal-delay-3"><strong class="counter" data-target="8">0</strong><span>Years of
+            Experience</span></div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section px-5 py-24 lg:px-8">
+      <div class="mx-auto max-w-7xl">
+        <div class="section-heading reveal mx-auto mb-12 max-w-2xl text-center">
+          <span class="eyebrow">MEET THE PEOPLE</span>
+          <h2 class="mt-3 text-3xl font-bold tracking-tight text-stone-900 sm:text-4xl">Our Creative <span
+              class="text-aura-blue">Team</span></h2>
+          <p class="mt-4 text-sm leading-7 text-stone-600">A team of imaginative minds bringing different skills
+            together to create inspiring spaces.</p>
+        </div>
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="team-card reveal overflow-hidden rounded-xl bg-white shadow-md">
+            <div class="team-cover cover-blue">
+              <div class="team-photo"><img
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=85"
+                  alt="AURA team member" loading="lazy"></div>
+              <div class="socials"><a href="#contact" aria-label="Contact">in</a><a href="#contact"
+                  aria-label="Email">✉</a><a href="#contact" aria-label="Facebook">f</a></div>
+            </div>
+            <div class="p-5 text-center">
+              <h3 class="font-bold text-stone-900">Creative Lead</h3>
+              <p class="mt-1 text-xs text-stone-600">Creative Director</p>
+            </div>
+          </article>
+          <article class="team-card reveal reveal-delay overflow-hidden rounded-xl bg-white shadow-md">
+            <div class="team-cover cover-purple">
+              <div class="team-photo"><img
+                  src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=85"
+                  alt="AURA team member" loading="lazy"></div>
+              <div class="socials"><a href="#contact" aria-label="Contact">in</a><a href="#contact"
+                  aria-label="Email">✉</a><a href="#contact" aria-label="Facebook">f</a></div>
+            </div>
+            <div class="p-5 text-center">
+              <h3 class="font-bold text-stone-900">Interior Architect</h3>
+              <p class="mt-1 text-xs text-stone-600">Interior Designer</p>
+            </div>
+          </article>
+          <article class="team-card reveal reveal-delay-2 overflow-hidden rounded-xl bg-white shadow-md">
+            <div class="team-cover cover-green">
+              <div class="team-photo"><img
+                  src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=700&q=85"
+                  alt="AURA team member" loading="lazy"></div>
+              <div class="socials"><a href="#contact" aria-label="Contact">in</a><a href="#contact"
+                  aria-label="Email">✉</a><a href="#contact" aria-label="Facebook">f</a></div>
+            </div>
+            <div class="p-5 text-center">
+              <h3 class="font-bold text-stone-900">3D Artist</h3>
+              <p class="mt-1 text-xs text-stone-600">3D Visualizer</p>
+            </div>
+          </article>
+          <article class="team-card reveal reveal-delay-3 overflow-hidden rounded-xl bg-white shadow-md">
+            <div class="team-cover cover-orange">
+              <div class="team-photo"><img
+                  src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=700&q=85"
+                  alt="AURA team member" loading="lazy"></div>
+              <div class="socials"><a href="#contact" aria-label="Contact">in</a><a href="#contact"
+                  aria-label="Email">✉</a><a href="#contact" aria-label="Facebook">f</a></div>
+            </div>
+            <div class="p-5 text-center">
+              <h3 class="font-bold text-stone-900">Space Planner</h3>
+              <p class="mt-1 text-xs text-stone-600">Space Planner</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section px-5 py-20 text-white lg:px-8">
+      <div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:gap-20">
+        <div class="reveal">
+          <h2 class="text-2xl font-bold">Contact Us</h2>
+          <p class="mt-2 text-sm text-stone-400">Have a project in mind? Tell us about it.</p>
+          <form id="contactForm" class="mt-7 space-y-4">
+            <input
+              class="contact-input w-full rounded-md border border-slate-700 bg-slate-700/70 px-4 py-3 text-sm text-white outline-none transition placeholder:text-stone-400"
+              type="text" name="name" placeholder="Your Name" required>
+            <input
+              class="contact-input w-full rounded-md border border-slate-700 bg-slate-700/70 px-4 py-3 text-sm text-white outline-none transition placeholder:text-stone-400"
+              type="email" name="email" placeholder="Your Email" required>
+            <input
+              class="contact-input w-full rounded-md border border-slate-700 bg-slate-700/70 px-4 py-3 text-sm text-white outline-none transition placeholder:text-stone-400"
+              type="text" name="subject" placeholder="Subject">
+            <textarea
+              class="contact-input min-h-28 w-full resize-y rounded-md border border-slate-700 bg-slate-700/70 px-4 py-3 text-sm text-white outline-none transition placeholder:text-stone-400"
+              name="message" placeholder="Your Message" required></textarea>
+            <button
+              class="send-btn w-full rounded-md bg-aura-blue px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-lg"
+              type="submit">Send Message</button>
+            <p id="formMessage" class="hidden text-sm text-emerald-300" role="status">Thank you! Your message is ready
+              to be sent.</p>
+          </form>
+        </div>
+        <div class="reveal reveal-delay">
+          <h2 class="text-2xl font-bold">Contact Information</h2>
+          <p class="mt-2 text-sm text-stone-400">Let's make your space feel like you.</p>
+          <div class="mt-8 space-y-6">
+            <div class="contact-detail"><span class="detail-icon">⌖</span>
+              <div><strong>Our Location</strong>
+                <p>Cairo, Egypt</p>
+              </div>
+            </div>
+            <div class="contact-detail"><span class="detail-icon">✉</span>
+              <div><strong>Email Us</strong>
+                <p>hello@aurainteriors.com</p>
+              </div>
+            </div>
+            <div class="contact-detail"><span class="detail-icon">☎</span>
+              <div><strong>Call Us</strong>
+                <p>+20 80 000 0000</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-art mt-9 flex min-h-28 items-center justify-center rounded-xl">
+            <span class="text-2xl font-bold tracking-[.3em] text-white">AURA<span class="font-normal">.</span></span>
+            <span class="contact-art-spark">✦</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="site-footer px-5 py-7 text-white lg:px-8">
+      <div class="mx-auto flex max-w-7xl flex-row items-center justify-between gap-5">
+        <div class="text-xs text-stone-500">
+          <p>© 2026 AURA Interior Design Studio. All Rights Reserved.</p>
+        </div>
+
+        <div class="flex items-center justify-center gap-3">
+          <a class="footer-social" href="#contact" aria-label="Instagram">ig</a>
+          <a class="footer-social" href="#contact" aria-label="Facebook">f</a>
+          <a class="footer-social" href="#contact" aria-label="Pinterest">p</a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
